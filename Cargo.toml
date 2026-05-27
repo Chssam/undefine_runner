@@ -1,0 +1,32 @@
+[package]
+name = "undefine_runner"
+version = "0.1.0"
+authors = ["Asus"]
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[features]
+default = ["web"]
+web = ["dioxus/web", "dioxus-motion/web", "dioxus-motion/transitions"]
+desktop = [
+    "dioxus/desktop",
+    "dioxus-motion/desktop",
+    "dioxus-motion/transitions",
+]
+mobile = ["dioxus/mobile", "dioxus-motion/desktop", "dioxus-motion/transitions"]
+
+[dependencies]
+dioxus = { version = "=0.7.8", features = ["router"] }
+dioxus-icons = { version = "0.1.0", default-features = false }
+dioxus-motion = { version = "0.3.5", optional = true, default-features = false }
+dioxus-primitives = { git = "https://github.com/DioxusLabs/components", version = "0.0.1", default-features = false }
+
+web-sys = "0.3.99"
+easer = "0.3"
+strum = { version = "0.28", features = ["derive"] }
+convert_case = "0.11"
+
+[dev-dependencies]
+dioxus-ssr = "=0.7.8"
