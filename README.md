@@ -1,4 +1,4 @@
-### Setup Static Website to run in GitHub
+### Setup Static Website to run in GitHub using [Dioxus](https://dioxuslabs.com/)
 
 Pre-require
 
