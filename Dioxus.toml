@@ -1,0 +1,27 @@
+[application]
+
+[web.app]
+
+# HTML title tag content
+title = "Undefine Runner"
+
+# Uncomment when publish to github
+base_path = "undefine_runner"
+
+# include `assets` in web platform
+[web.resource]
+
+# Additional CSS style files
+style = []
+
+# Additional JavaScript files
+script = []
+
+[web.resource.dev]
+
+# Javascript code file
+# serve: [dev-server] only
+script = []
+
+# [[web.proxy]]
+# backend = "http://localhost:8000/api/"
